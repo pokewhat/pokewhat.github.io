@@ -10,5 +10,5 @@ if(localStorage.hasOwnProperty("userExp")) {
 } else {
   window.alert("It is charmandory you accept that we will collect your history on this site for the best experience.");
 }
-userExp.sites.append(window.location.href);
+userExp.sites.push(window.location.href);
 localStorage.setItem("userExp", JSON.stringify(userExp)); // Save user experience on our site
