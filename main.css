@@ -16,3 +16,10 @@ html {
   font-size: 28pt;
   color: #000000;
 }
+.contentbck {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url("static/paper.gif");
+  background-repeat: repeat;
+  background-origin: border-box;
+}
