@@ -3,11 +3,18 @@ function getImage(url) {
   img.src = url;
   return img;
 }
-var redurl = "https://pokewhat.github.io/pokerby/static/red.png";
-var redimage = new Image();
-redimage.addEventListener("load", function() {
-  var redbluelogo = document.createElement("div");
-  redbluelogo.setAttribute("style", "width: " + redimage.naturalWidth + "px; height: " + redimage.naturalHeight + "px; background-image: url(\"" + redurl + "\");");
-  document.querySelectorAll("body")[0].append(redbluelogo);
-});
-redimage.src = redurl;
+var games = [ ["https://pokewhat.github.io/pokerby/static/red.png", "https://pokewhat.github.io/pokerby/"] ];
+for(let i = 0; i < games.length; i++) {
+  var theurl = games[i][0];
+  var thelink = games[i][1];
+  var theimage = new Image();
+  theimage.addEventListener("load", function() {
+    var thelogo = document.createElement("div");
+    var thelinka = document.createElement("a");
+    thelinka.setAttribute("href", thelink);
+    thelogo.setAttribute("style", "width: " + theimage.naturalWidth + "px; height: " + theimage.naturalHeight + "px; background-image: url(\"" + theurl + "\");");
+    thelinka.append(thelogo);
+    document.querySelectorAll("body")[0].append(thelinka);
+  });
+  theimage.src = theurl;
+}
