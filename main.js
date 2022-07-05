@@ -6,10 +6,8 @@ faviconloader.setAttribute("href", faviconurl);
 document.querySelectorAll("head")[0].append(faviconloader);
 function getImage(url) {
   const img = new Image();
-  img.addEventListener("load", function() {
-    return this;
-  });
   img.src = url;
+  return img;
 }
 var redurl = "https://pokewhat.github.io/pokerby/static/red.png";
 var redimage = getImage(redurl);
