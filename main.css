@@ -3,8 +3,11 @@ html {
   font-family: 'Mingzat', san-serif;
   background-image: url("favicon-pokewhat.png");
   background-repeat: repeat-x;
+  background-position: 20px 20px;
+  background-size: 50px 50px;
 }
 .banner {
   text-align: center;
   font-size: 60pt;
+  color: #ffffff;
 }
