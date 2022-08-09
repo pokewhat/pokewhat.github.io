@@ -8,7 +8,7 @@ html {
   animation: anime 15.0s steps(100) infinite;
 }
 @keyframes anime {
-  100% { background-position: -8000px; }
+  100% { background-position: -1px, -1px; }
 }
 .banner {
   text-align: center;
