@@ -5,6 +5,10 @@ html {
   background-repeat: repeat;
   /*background-position: 20px 20px; sorry!!*/
   background-size: 50px 50px;
+  animation: anime 15.0s steps(100) infinite;
+}
+@keyframes anime {
+  100% { background-position: -8000px; }
 }
 .banner {
   text-align: center;
@@ -20,6 +24,7 @@ html {
   border: 10px dashed black;
   padding: 25px;
   background: url("static/paper.gif");
+  animation: anime 15.0s steps(100) infinite;
   background-repeat: repeat;
   background-origin: border-box;
 }
